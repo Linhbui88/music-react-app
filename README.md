@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# Music App
+A music recommendation React application
+## APIS
+* [https://tastedive.com/read/api](https://tastedive.com/read/api)
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
