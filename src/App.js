@@ -47,8 +47,8 @@ function App() {
       <div className='container'>
         {loading ? <Spinner /> : (
           <>
-          <Info info={info}/>
-          <pre>{JSON.stringify(info, null, 2)}</pre>
+          <Info {...info}/>
+          <Gallery results ={results}/>
           </>
         ) }
       

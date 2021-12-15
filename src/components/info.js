@@ -1,8 +1,7 @@
 import Iframe from './iframe'
 
-const Info = props => {
-  const { info } = props
-  const { Name, wTeaser, wUrl, yUrl } = info
+const Info = ({Name, wTeaser, wUrl, yUrl}) => {
+ 
   return (
     <div className="row" style={{ paddingTop: 30 }}>
       {yUrl && (

@@ -1,8 +1,10 @@
-function Gallery() {
+import ResultCard from "./resultCard"
+function Gallery({results}) {
+ console.log(results)
   return (
-    <div>
-      
-    </div>
+    results.map((result)=> {
+      return <ResultCard {...result}/>
+    })
   )
 }
 
