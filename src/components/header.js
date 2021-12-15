@@ -5,6 +5,9 @@ const Header = (props) => {
       <div className="container">
         <h1>You might also like...</h1>
         <p>Search an artist to find similar music</p>
+        {props.children}
+
+
       </div>
     </header>
      
