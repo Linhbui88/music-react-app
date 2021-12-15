@@ -44,16 +44,26 @@ function App() {
           getRecommendations ={getRecommendations}
         />
       </Header>
-      <div className='container'>
-        {loading ? <Spinner /> : (
-          <>
-          <Info {...info}/>
-          <Gallery results ={results}/>
-          </>
-        ) }
-      
-        {/* // loading && <Spinner /> */}
+     
+      <div className="row">
+        <div className="column column-20">  
+              sidebar
+        </div>
+        <div className="column column-80">
+          <div classname="container">
+            { loading ? <Spinner /> : (
+            <>
+              <Info {...info}/>
+             
+            </>
+            ) }
+          </div>
+        </div>
       </div>
+      <Gallery results ={results}/>
+        
+      
+                {/* // loading && <Spinner /> */}
     </>
   )
 
