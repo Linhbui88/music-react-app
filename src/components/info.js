@@ -1,7 +1,7 @@
 import Iframe from './iframe'
 
 const Info = ({Name, wTeaser, wUrl, yUrl}) => {
- 
+  
   return (
     <div className="row" style={{ paddingTop: 30 }}>
       {yUrl && (

@@ -1,10 +1,13 @@
+import './gallery.css'
 import ResultCard from "./resultCard"
 function Gallery({results}) {
  console.log(results)
   return (
-    results.map((result)=> {
+    <div className ="gallery">
+      {results.map((result)=> {
       return <ResultCard {...result}/>
-    })
+    })}
+    </div>
   )
 }
 
