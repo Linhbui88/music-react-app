@@ -2,6 +2,7 @@ import {useState, useEffect} from 'react'
 import Header from './components/header'
 import SearchForm from './components/searchForm';
 import API from'./ultils/API'
+import Spinner from './components/spinner'
 import './App.css';
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
   
   }
 
+
   return(
     <>
       <Header>
@@ -31,6 +33,11 @@ function App() {
           setSearchTerm={setSearchTerm}
         />
       </Header>
+      <div className='container'>
+        {loading ? <Spinner /> : null}
+      
+        {/* // loading && <Spinner /> */}
+      </div>
     </>
   )
 
