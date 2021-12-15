@@ -3,9 +3,14 @@ const SearchForm =(props) => {
   const handleChange =(e)=>{
    props.setSearchTerm(e.target.value)
   }
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    props.getRecommendations()
+    console.log('test')
+  }
 
   return (
-    <form >
+    <form onSubmit={handleSubmit} >
       <input
         className ="searchForm"
         name = "searchTerm"

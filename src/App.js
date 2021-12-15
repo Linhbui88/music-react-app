@@ -6,13 +6,13 @@ import Spinner from './components/spinner'
 import './App.css';
 
 function App() {
-  const [searchTerm, setSearchTerm]= useState('Abba')
+  const [searchTerm, setSearchTerm]= useState('')
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
     getRecommendations()
   }, [])
-  const getRecommendations = async()=>{
+  const getRecommendations = async () =>{
     setLoading(true)
     try {
       const results =await API.getRecommendations(searchTerm)
@@ -31,6 +31,7 @@ function App() {
         <SearchForm 
           searchTerm={searchTerm}
           setSearchTerm={setSearchTerm}
+          getRecommendations ={getRecommendations}
         />
       </Header>
       <div className='container'>
