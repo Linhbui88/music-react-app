@@ -1,6 +1,8 @@
 import {useState, useEffect} from 'react'
 import Header from './components/header'
 import SearchForm from './components/searchForm';
+import Info from'./components/info';
+import Gallery from './components/gallery'
 import API from'./ultils/API'
 import Spinner from './components/spinner'
 import './App.css';
@@ -45,7 +47,7 @@ function App() {
       <div className='container'>
         {loading ? <Spinner /> : (
           <>
-          <pre>{JSON.stringify(info, null, 2)}</pre>
+          <Info info={info}/>
           <pre>{JSON.stringify(info, null, 2)}</pre>
           </>
         ) }
